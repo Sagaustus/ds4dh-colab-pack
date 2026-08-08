@@ -96,3 +96,47 @@ python colab_pack/build_pack.py --check --zip
 
 Every notebook is executed end to end as part of the build, so the worked
 answers are known to reproduce the figures quoted in the course.
+
+## African / Digital Humanities adaptation
+
+If you want to repurpose this pack for African migration and Digital Humanities
+research, the cleanest path is to keep the same method-first structure and swap
+the substantive domain.
+
+### Recommended data stack
+
+| Layer | Suggested sources | Use |
+|---|---|---|
+| Migration microdata | IPUMS International, national census extracts | Internal migration, birthplace, residence, education, work |
+| Cross-border migration | UN DESA migrant stock, OECD DIOC, Eurostat, US Census ACS / IPUMS USA, Statistics Canada | Africans in Europe and North America |
+| African context | Afrobarometer, WorldPop, GHSL, UNHCR, ACLED | Attitudes, urbanisation, displacement, conflict context |
+| DH text layer | African newspaper archives, oral histories, parliamentary debates, literary metadata | Discourse, identity, belonging, and public framing |
+
+### Suggested project spine
+
+Center the pack on migration and belonging in African cities. That keeps the data
+African-based, supports spatial and statistical methods, and leaves room for a
+genuine humanities layer through text and discourse analysis.
+
+### Notebook translation
+
+The current notebook arc can be adapted with only the subject matter changed:
+
+| Current pattern | African / DH version |
+|---|---|
+| First look at the housing data | First look at migration in African cities |
+| Absence audit | Reading data for what is missing |
+| Group comparison | Migrants vs non-migrants, or cities and regions |
+| Join keys and missingness | Integrating census, survey, spatial, and text sources |
+| Regression and fixed effects | Explaining migration outcomes with place controls |
+| Clustering and ML | Typologies of cities, corridors, or texts |
+| Index construction | Belonging, mobility, or exclusion index |
+| Spatial analysis | Urban growth, accessibility, and corridor geography |
+| Policy reasoning | Evidence limits and interpretive scope |
+
+### Practical implementation rule
+
+Keep each notebook self-contained, use one main table per notebook, and end each
+one with a short statement of what the method can and cannot support. That keeps
+the adaptation aligned with the original pack instead of turning into a loose
+collection of examples.
