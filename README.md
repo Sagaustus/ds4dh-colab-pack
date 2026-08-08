@@ -30,6 +30,10 @@ ratio, split by immigrant status and owner/renter tenure.
 | `full_accessibility_index.csv` | 132 | published accessibility index per CSD |
 | `top10_immigrant_penalty.csv` | 10 | published top-10 immigrant renter premium |
 
+These are aggregate published census figures for municipalities. They contain no
+individual-level data. One unused internal working column has been dropped from
+`merged_dataset.csv` in this distributed copy; no notebook reads it.
+
 ## The notebooks
 
 | # | Notebook | Technique |
